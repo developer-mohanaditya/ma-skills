@@ -10,4 +10,4 @@ Skills follow the [Agent Skills format](https://agentskills.io/specification): a
 
 Copy the entire skill directory, including references. Start or reload the tool if needed and confirm it can discover the installed skill. The skill file's format is portable, but project instructions, supported commands, permissions, and local versus hosted filesystem access differ. Check each tool's current documentation and actual behavior.
 
-The identity policy is persistent project guidance. Put or reference it in the instruction mechanism each tool actually loads; an installed skill alone does not guarantee automatic enforcement. For a cloud environment, confirm the files exist and are read in that environment.
+When a skill establishes persistent project rules, put or reference those rules in the instruction mechanism each tool actually loads; an installed skill alone does not guarantee automatic enforcement. For a cloud environment, confirm the files exist and are read in that environment. Personal or service-connected skills may have additional authentication, permissions, or runtime requirements; check each skill before use.
