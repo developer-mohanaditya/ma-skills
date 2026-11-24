@@ -6,6 +6,7 @@ A personal library of reusable agent skills for the owner's workflows. Skills ca
 
 | Skill | Purpose |
 | --- | --- |
+| [install-this-skill](skills/install-this-skill/SKILL.md) | Stage, security-scan, evaluate, install, and explain external agent skills before adding them to your skills directory. |
 | [project-git-identity](skills/project-git-identity/SKILL.md) | Set up and maintain the owner's project-specific Git identity and publishing policy. |
 
 ## Getting started
