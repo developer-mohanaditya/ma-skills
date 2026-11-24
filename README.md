@@ -12,13 +12,11 @@ A personal library of reusable agent skills for the owner's workflows. Skills ca
 
 ## New project starter run
 
-When opening a new project (software, writing, research, or general work), run the starter skills you want persisted in that project's `AGENTS.md` (and any tool-specific instruction file such as `GEMINI.md` or `CLAUDE.md`):
+When opening a new project (software, writing, research, or general work), start a dedicated **Setup Thread (Thread 1)** and point your agent at [STARTER.md](STARTER.md):
 
-1. **`project-git-identity`** — if the project uses Git/GitHub, establish the persistent PRIMARY/SECONDARY account and attribution policy.
-2. **`evidence-led-partner`** — install the compact evidence-led thinking partner policy into `AGENTS.md` so it stays active across every session.
-3. **Additional workflow skills** — add any task-specific skills (or vet external ones first with `install-this-skill`).
+> *"Read `https://github.com/developer-mohanaditya/ma-skills` (`STARTER.md`) and set up this project."*
 
-Each starter skill preserves existing instructions and keeps project-specific choices inside the target project.
+The agent will fetch `ma-skills` in a temp folder, ask your project choices, write your persistent policies (`project-git-identity`, `evidence-led-partner`, and any selected skills) into the new project's `AGENTS.md` / policy files / `.agents/skills/`, and clean up. You can then open **Thread 2** for actual work with all rules automatically active, and return to **Thread 1** whenever you want to modify project rules.
 
 ## Getting started
 
@@ -36,6 +34,7 @@ A skill provides instructions for a workflow; it does not itself grant permissio
 ma-skills/
 ├── AGENTS.md                   # Instructions for working on this library
 ├── README.md                   # Catalog and getting started
+├── STARTER.md                  # New-project bootstrap runbook (Thread 1)
 ├── docs/compatibility.md       # Tool discovery and portability notes
 ├── project-identity-policy.md  # Git identity policy for this library
 └── skills/
