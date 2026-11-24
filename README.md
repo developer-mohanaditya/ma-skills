@@ -6,8 +6,19 @@ A personal library of reusable agent skills for the owner's workflows. Skills ca
 
 | Skill | Purpose |
 | --- | --- |
+| [evidence-led-partner](skills/evidence-led-partner/SKILL.md) | Install a persistent evidence-led thinking partner policy into a project and run structured critiques for consequential decisions. |
 | [install-this-skill](skills/install-this-skill/SKILL.md) | Stage, security-scan, evaluate, install, and explain external agent skills before adding them to your skills directory. |
 | [project-git-identity](skills/project-git-identity/SKILL.md) | Set up and maintain the owner's project-specific Git identity and publishing policy. |
+
+## New project starter run
+
+When opening a new project (software, writing, research, or general work), run the starter skills you want persisted in that project's `AGENTS.md` (and any tool-specific instruction file such as `GEMINI.md` or `CLAUDE.md`):
+
+1. **`project-git-identity`** — if the project uses Git/GitHub, establish the persistent PRIMARY/SECONDARY account and attribution policy.
+2. **`evidence-led-partner`** — install the compact evidence-led thinking partner policy into `AGENTS.md` so it stays active across every session.
+3. **Additional workflow skills** — add any task-specific skills (or vet external ones first with `install-this-skill`).
+
+Each starter skill preserves existing instructions and keeps project-specific choices inside the target project.
 
 ## Getting started
 
